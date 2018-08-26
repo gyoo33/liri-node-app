@@ -35,7 +35,7 @@ else if (fourCommands === "spotify-this-song") {
     // console.log("B");
 
     // Run a request ot the Spotify API with song selected
-    spotify.search({ type: 'track', query: searchItem, limit: 2 }).then(function (response) {
+    spotify.search({ type: 'track', query: searchItem || "The Sign Ace of Base", limit: 2 }).then(function (response) {
         var song = response.tracks.items[0];
         var showSong = [
             "Artist(s): " + song.artists[0].name,
