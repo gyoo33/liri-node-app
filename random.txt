@@ -1,3 +1,4 @@
-my-tweets
-spotify-this-song,"Parachutes"
-movie-this, "Incredibles"
+run 'my-tweets'
+run 'spotify-this-song' for 'I Want it That Way'
+run 'spotify-this-song' for 'Parachutes'
+run 'movie-this' for 'Incredibles'
