@@ -54,7 +54,7 @@ else if (fourCommands === "movie-this") {
 
     var movieChoice = searchItem || "Mr. Nobody";
     // Then run a request to the OMDB API with the movie specified
-    var queryUrl = "http://www.omdbapi.com/?t=" + movieChoice + "&y=&plot=short&apikey=trilogy";
+    var queryUrl = "http://www.omdbapi.com/?t=" + movieChoice + "&y=&plot=short&apikey=" + keys.omdb.key;
 
     // This line is just to help us debug against the actual URL.
     // console.log(queryUrl);
