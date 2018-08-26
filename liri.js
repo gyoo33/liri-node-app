@@ -52,8 +52,9 @@ else if (fourCommands === "spotify-this-song") {
 else if (fourCommands === "movie-this") {
     // console.log("C");
 
+    var movieChoice = searchItem || "Mr. Nobody";
     // Then run a request to the OMDB API with the movie specified
-    var queryUrl = "http://www.omdbapi.com/?t=" + searchItem + "&y=&plot=short&apikey=trilogy";
+    var queryUrl = "http://www.omdbapi.com/?t=" + movieChoice + "&y=&plot=short&apikey=trilogy";
 
     // This line is just to help us debug against the actual URL.
     // console.log(queryUrl);
@@ -87,9 +88,9 @@ else if (fourCommands === "do-what-it-says") {
         // console.log(data);
 
         // Then split it by commas (to make it more readable)
-        var dataArr = data.split(",");
+        var showFile = data.split(",");
 
         // We will then re-display the content as an array for later use.
-        console.log("\n" + dataArr + "\n");
+        console.log("\n" + showFile + "\n");
     })
 }
